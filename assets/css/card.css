@@ -35,6 +35,8 @@ video {
     color: white;
     font-family: 'Roboto Slab', serif;
     font-size: 25px;
+    text-align: center;
+    text-shadow: 0 5px 10px rgb(0, 0, 0, 0.7);
 }
 
 .data .photo img {
@@ -45,4 +47,10 @@ video {
     border-style: solid;
     border-width: 10px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    transition: 0.8s filter;
+}
+
+.data .photo img:hover {
+    filter: grayscale();
+
 }
